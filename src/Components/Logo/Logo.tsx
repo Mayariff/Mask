@@ -1,6 +1,6 @@
 import React from 'react';
 import s from "./Logo.module.scss";
-import logo from "../../common/img/logo.png";
+import logo from "../../assets/img/logo.png";
 import {useNavigate} from "react-router-dom";
 import {ROUTE} from "../../Routs/routingData";
 

@@ -1,5 +1,5 @@
-@import '../../common/saas/mixins';
-@import '../../common/saas/variables';
+@import '../../assets/saas/mixins';
+@import '../../assets/saas/variables';
 
 .logo {
   height: 100%;
@@ -10,13 +10,13 @@
   background-size: contain;
   position: relative;
   &::before{
-    content: url("../../common/img/left.png");
+    content: url("../../assets/img/left.png");
     position: absolute;
     top:1px;
     left: -8px;
   }
   &::after{
-    content: url("../../common/img/right.png");
+    content: url("../../assets/img/right.png");
     position: absolute;
     top:1px;
     right: -17px;

@@ -1,5 +1,5 @@
-@import '../../common/saas/mixins';
-@import '../../common/saas/variables';
+@import '../../assets/saas/mixins';
+@import '../../assets/saas/variables';
 
 .button {
   width: 180px;
@@ -13,7 +13,7 @@
 
 
   &::before {
-    content: url("../../common/img/glare.png");
+    content: url("../../assets/img/glare.png");
     position: absolute;
     bottom: -23px;
     left: -20px;
@@ -21,7 +21,7 @@
   }
 
   &::after {
-    content: url("../../common/img/glare.png");
+    content: url("../../assets/img/glare.png");
     position: absolute;
     top: -22px;
     right: -20px;
