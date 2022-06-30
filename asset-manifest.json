@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Mask/static/css/main.2652fd7e.css",
+    "main.js": "/Mask/static/js/main.8767633b.js",
+    "static/js/787.7451ade9.chunk.js": "/Mask/static/js/787.7451ade9.chunk.js",
+    "static/media/space_star_wallpaper_026.png": "/Mask/static/media/space_star_wallpaper_026.2c7bffb2c40cc70488d1.png",
+    "static/media/bgImg.png": "/Mask/static/media/bgImg.1c12a2f28cd028895df9.png",
+    "index.html": "/Mask/index.html",
+    "main.2652fd7e.css.map": "/Mask/static/css/main.2652fd7e.css.map",
+    "main.8767633b.js.map": "/Mask/static/js/main.8767633b.js.map",
+    "787.7451ade9.chunk.js.map": "/Mask/static/js/787.7451ade9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2652fd7e.css",
+    "static/js/main.8767633b.js"
+  ]
+}
