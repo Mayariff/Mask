@@ -1,0 +1,24 @@
+@import '../../common/saas/mixins';
+@import '../../common/saas/variables';
+
+  .container {
+    @include flexStyle(row, space-between, center);
+    @media screen and (max-width: 840px) {
+      @include flexStyle(column, center, center);
+    }
+    width: 100%;
+    .block1 {
+      @include flexStyle(column, space-around, flex-start);
+      @media screen and (max-width: 840px) {
+        @include flexStyle(column, center, center);
+      }
+      .header {
+        @include textGradient("Conv_DejaVuSans", 48px, 600);
+        @media screen and (max-width: 840px) {
+          font-size: 40px;
+        }
+      }
+      .headerSmall {
+        @include textGradient("Conv_DejaVuSans", 36px, 400);
+      }
+  }}

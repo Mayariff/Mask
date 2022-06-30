@@ -1,0 +1,70 @@
+@import '../../common/saas/mixins';
+@import '../../common/saas/variables';
+
+.container {
+  @include flexStyle(row, flex-end, center);
+  flex-wrap: wrap;
+  margin-right: -36px;
+  width: 340px;
+  .benefit {
+    padding: 20px 0 34px;
+    border-radius: 5px;
+    margin: 0 0 10px 10px;
+    width: 160px;
+    height: 160px;
+    @include flexStyle(column, space-between, center);
+    @include text($activeColor, "DejaVu Sans", 16px, 400);
+    .accent {
+      @include text($activeColor, "DejaVu Sans", 46px, 600);
+    }
+    &:nth-child(1) {
+      @include benefitItem(135deg);
+      @media screen and (max-width: 840px) {
+        @include benefitItem(-135deg);
+      }
+
+    }
+    &:nth-child(2) {
+      @include benefitItem(-135deg);
+      @media screen and (max-width: 900px) {
+        @include benefitItem(135deg);
+      }
+    }
+    &:nth-child(3) {
+      @include benefitItem(45deg);
+      @media screen and (max-width: 900px) {
+        @include benefitItem(135deg);
+      }
+    }
+    &:nth-child(4) {
+      @include benefitItem(-45deg);
+      @media screen and (max-width: 900px) {
+        @include benefitItem(135deg);
+      }
+      @media screen and (max-width: 840px) {
+        @include benefitItem(-135deg);
+      }
+    }
+    &:hover{
+      @include benefitItem(135deg);
+      cursor: pointer;
+      border-bottom: $frameColor solid 1px;
+      border-right: $frameColor solid 1px;
+      border-image: linear-gradient(to left top,$frameColor 10%, transparent 30%);
+      border-image-slice: 1;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    @include flexStyle(column, center, flex-end);
+  }
+  @media screen and (max-width: 840px) {
+    margin: 0;
+    width: 90%;
+    @include flexStyle(row, space-between, center);
+  }
+  @media screen and (max-width: 540px) {
+    @include flexStyle(row, center, center);
+    flex-wrap: wrap;
+  }
+}

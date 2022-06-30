@@ -1,0 +1,36 @@
+@mixin flexStyle($dir, $jContent, $Items){
+  display: flex;
+  flex-direction: $dir;
+  justify-content: $jContent;
+  align-items: $Items;
+  flex-wrap:nowrap;
+}
+
+@mixin burger(){
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  background: white;
+  margin: 0 auto;
+}
+
+@mixin textGradient($font, $size, $weight){
+  font-family: $font, sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+  background-color: $accentColor;
+  background-image: linear-gradient(90deg,$mainColor, $accentColor);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color:transparent;
+}
+
+@mixin text($color,$fontFamily,$fontSize, $fontWeight) {
+  color: $color;
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  font-weight: $fontWeight ;
+}
+
+@mixin benefitItem($deg) {
+  background: linear-gradient($deg, transparent 60%, rgba(152, 147, 147, 0.16));
+}

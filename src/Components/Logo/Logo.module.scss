@@ -1,0 +1,44 @@
+@import '../../common/saas/mixins';
+@import '../../common/saas/variables';
+
+.logo {
+  height: 100%;
+  width: 320px;
+  border-left: $frameColor solid 1px;
+  border-right: $frameColor solid 1px;
+  background: transparent no-repeat center scroll;
+  background-size: contain;
+  position: relative;
+  &::before{
+    content: url("../../common/img/left.png");
+    position: absolute;
+    top:1px;
+    left: -8px;
+  }
+  &::after{
+    content: url("../../common/img/right.png");
+    position: absolute;
+    top:1px;
+    right: -17px;
+  }
+  @media screen and (max-width: 1064px) {
+    position: absolute;
+    z-index: 10;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @media screen and (max-width: 635px) {
+      border: none;
+      &::before,
+      &::after{
+        content:none;
+      }
+    }
+  }
+  &:hover{
+    cursor: pointer;
+  }
+  &:active {
+    transform: scale(0.99);
+  }
+}
